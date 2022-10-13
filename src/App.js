@@ -1,21 +1,17 @@
 import React from "react";
+import Tarefas from "./components/Tarefas";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="component">
+        <div className="componentHeader">
+          <h1 className="componentTitle">Minhas tarefas</h1>
+        </div>
+        <div className="componentContent">
+          <Tarefas />
+        </div>
+      </div>
     </div>
   );
 }
